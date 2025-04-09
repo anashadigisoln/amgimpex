@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT : Kraft Paper Salad Bowl with Lid</title>
+
+    <meta aria-keyshortcuts="Alt+Shift+R" name="referrer" content="origin">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/54b67f5615.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Top bar-->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar_left">
+                <span>Welcome to  <STRONG STYLE="color: rgb(40, 187, 33);font-weight: bold;">AMGIMPEX</STRONG></span>
+            </div>
+           
+            <div class="topbar_right">
+                
+           
+            <ul>
+                <li><i class="fa-solid fa-phone" style="font-size: 15px;"></i><span style="justify-content: space-between;margin-left: 20px;"></span>+91 95011 05511</li>
+                <li> <i class="fa-brands fa-square-instagram fa-1.5x" style="font-size: 20px;"></i>
+                <li><i class="fa-brands fa-facebook fa-1.5x" style="font-size: 20px;"></i></li>
+                <li><a href="www.linkedin.com/company/amgimpex"><i  class="fa-brands fa-linkedin fa-1.5x" style="font-size: 20px; color: white;"></i></a></li>
+    
+            </ul>
+    </div>
+    </div></div>
+
+    <!-- Nav bar-->
+    <nav class="navbar" id="home">
+        <div class="navbar-brand"><img src="/logo.png" ><strong style="font-size: 30PX; color: rgb(3, 58, 117);">AMGImpex</strong></div>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li id="a" ><a href="index.html" class="navbar-link">HOME</a></li>
+            <li class="navbar-item"><a href="index.html" class="navbar-link">ABOUT</a></li>
+            <li class="navbar-item"><a href="index.html" class="navbar-link">PRODUCT</a></li> </li>
+            <li class="navbar-item"><a href="index.html" class="navbar-link">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <script>document.getElementById('mobile-menu').addEventListener('click', function() {
+        const navbarMenu = document.querySelector('.navbar-menu');
+        navbarMenu.classList.toggle('active');
+    });
+    
+    // Optional: Add functionality to toggle dropdown menus on mobile
+    document.querySelectorAll('.navbar-item').forEach(item => {
+        item.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                this.classList.toggle('active');
+            }
+        });
+    });</script>
+
+
+
+    <!-- ------------------Product Details----------------------------->
+     <h4>Kraft Paper Salad Bowl with Lid</h4>
+     <p style="margin: 20px 0px 0px 80px;">A sustainable packaging solution, combining sturdy construction with a secure fit to keep meals fresh for delivery and takeout.<br> Designed to keep food fresh while reducing environmental impact. </p>
+        <hr style="width: 80%; margin: 20px 0px 0px 80px;">
+
+
+    <div id="about" class="aboutp">
+            <div class="about-prd">
+                <img src="/SaladBowl2.webp" alt="">
+                </div>
+                <div class="about-pr">
+                    <h1 >Kraft Paper Salad Bowl with Lid : 500 ML (16oz) </h1>
+                   <button onclick="openPopup()">Order Now</button>
+                </div>
+                <div class="about-prd">
+                    <img src="/SaladBowl2.webp" alt="">
+                    </div>
+                    <div class="about-pr">
+                        <h1 >Kraft Paper Salad Bowl with Lid : 750 ML (26oz) </h1>
+                       <button onclick="openPopup()">Order Now</button>
+                    </div>
+                    <div class="about-prd">
+                        <img src="/SaladBowl2.webp" alt="">
+                        </div>
+                        <div class="about-pr">
+                            <h1 >Kraft Paper Salad Bowl with Lid : 1000 ML (32oz) </h1>
+                           <button onclick="openPopup()">Order Now</button>
+                        </div>
+                    </div>
+
+<!-- Popup Overlay -->
+<div id="popupOverlay" class="popup-overlay" onclick="closePopup()"></div>
+
+<!-- Popup Box -->
+<div id="popupBox" class="popup">
+    <span class="popup-close" onclick="closePopup()">×</span>
+    <h2>Reach to Us for Order</h2>
+    <!-- Contact Us Form Section -->
+       
+        <div class="form-section">
+          
+          <form action="contact-form.php" method="POST" id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="mobile">Mobile No.</label>
+            <input type="tel" id="mobile" name="mobile" required>
+    
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+   
+</div>
+
+<script>
+    function openPopup() {
+        document.getElementById("popupBox").style.display = "block";
+        document.getElementById("popupOverlay").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popupBox").style.display = "none";
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+</script>               
+  <!--Footer-->
+  <footer>
+    <div class="flogo">
+      
+  
+    <div class="footer-col">
+    <img src="/logo.png" alt="AMGIMPEX">
+    </div>
+      <p style="font-size:12px;color:white; padding-bottom:30px;">Copyright &copy; 2025 AMGIMPEX. All rights reserved.</p>
+                 <p style="color:white">We specialize in exporting eco-friendly disposable products made from sugarcane bagasse, Areca palm leaves, paper cartons, and molded paper pulp trays. Our mission is to provide biodegradable, compostable, and sustainable alternatives to plastic-based disposables, helping businesses and consumers reduce their environmental footprint. <br> <br></p>
+  
+      <!-- hitwebcounter Code START -->
+      <a href="https://www.freecounterstat.com" title="web visitor counter"><a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=pxww4fcjwf6tn8yt67kxll75a99qcssp" border="0" title="web counter" alt="web counter"></a>
+             </div>
+    </div>
+  
+    <div class="footer-col">
+                 <ul class="list">
+                     <li><a style="color: white;" href="#home">Home</a></li>
+                      <li><a style="color: white;" href="#about">About Us</a></li>
+                        <li><a style="color: white;" href="#products">Products</a></li>
+                          <li><a style="color: white;" href="#contact">Contact Us</a></li>
+      
+                 </ul>
+             </div>
+  
+    <div class="footer-col">
+     <strong>Address:</strong> AMGIMPEX, 18 Industrial Area,<br> Phagwara-144401, India<br>
+  </br>
+  <strong>Phone:</strong> +91 95011 05511<br>
+  </br>
+  <strong>Email:</strong> <a style="color:white" href="mailto:business@amgimpex.in">business@amgimpex.in</a><br><p>
+  <div class="social-icons">
+                     <a href="#" class="fab fa-facebook fa-2x" style="color: white; text-decoration: none; padding-top: 20px; margin: 5px; "></a>
+                     <a href="#" class="fab fa-instagram fa-2x" style="color: white; text-decoration: none; padding-top: 20px; margin: 5px;"></a>
+                     <a href="www.linkedin.com/company/amgimpex" class="fab fa-linkedin fa-2x" style="color: white; text-decoration: none; padding-top: 20px; margin: 5px;"></a>
+                 </div>
+  </footer>
+  
+  
+  <!--Bottom-->
+             
+           <div class="footer-bottom">
+  
+             <p style="color:black; font-weight:bold;">Designed and Developed by <a href="https://anashadigisoln.in" target="_blank">Anasha Digisoln</a> <a href="https://www.instagram.com/anasha_digisoln/?hl=en" target="_blank"><img src="https://rjiindia.in/Anasha2.png" alt="Anasha Digisoln Logo" class="anasha-logo"></p></a>
+         </div>
+             
+    
+  
+     <!-- Back to Top Button -->
+      <a id="backToTopBtn" href="#home">
+          <i class="fa fa-angle-up"></i>
+      </a>
+      <script> // Back to Top Button Visibility
+      const backToTopBtn = document.getElementById("backToTopBtn");
+  
+      window.onscroll = function() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+              backToTopBtn.style.display = "block";  // Show button
+          } else {
+              backToTopBtn.style.display = "none";  // Hide button
+          }
+      }
+      </script>    
+
+</body>
+</html>
